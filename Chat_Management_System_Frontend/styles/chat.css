@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .chat-list {
+    width: 30%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .chat-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #2a2a2a;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #logout-btn:hover {
+    background-color: #c82333;
+  }
+  
+  #chat-messages {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #2a2a2a;
+  }
+  
+  #message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #send-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #send-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-item {
+    padding: 10px;
+    background-color: #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-item:hover {
+    background-color: #4a4a4a;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message.sent {
+    text-align: right;
+  }
+  
+  .message.received {
+    text-align: left;
+  }
+  
+  .message.sent .content {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message.received .content {
+    background-color: #3a3a3a;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+  }
